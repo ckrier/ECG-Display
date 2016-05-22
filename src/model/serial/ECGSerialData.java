@@ -8,7 +8,7 @@ package model.serial;
 import controller.Controller;
 import java.util.ArrayList;
 
-import javax.comm.SerialPort;
+import jssc.SerialPort;
 import jssc.SerialNativeInterface;
 import jssc.SerialPortList;
 import model.files.ECGFileWriter;
