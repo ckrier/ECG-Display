@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/view/ECGDisplay.java</file>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/controller/Controller.java</file>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/model/files/ECGFileWriter.java</file>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/model/serial/SerialPortListener.java</file>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/model/serial/ECGSerialData.java</file>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/model/files/FileWriter.java</file>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/controller/ECGController.java</file>
+            <file>file:/home/connor/NetBeansProjects/ECGGraphs/src/model/serial/FakeSerial.java</file>
+        </group>
+    </open-files>
+</project-private>
