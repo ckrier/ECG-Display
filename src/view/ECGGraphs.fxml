@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane alignment="CENTER" collapsible="false" text="ECG on the Go" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ECGDisplay">
+   <content>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="1192.0" prefHeight="700.0" prefWidth="1198.0">
+         <children>
+            <LineChart fx:id="lead_avr" animated="false" createSymbols="false" legendVisible="false" title="Lead AVF" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <xAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis animated="false" autoRanging="false" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="lead1" animated="false" createSymbols="false" legendVisible="false" title="Lead 1">
+               <xAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="lead_avl" animated="false" createSymbols="false" legendVisible="false" title="Lead AVL" GridPane.columnIndex="1">
+               <xAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="lead2" animated="false" createSymbols="false" legendVisible="false" title="Lead 2" GridPane.rowIndex="1">
+               <xAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="lead3" animated="false" createSymbols="false" legendVisible="false" title="Lead 3" GridPane.rowIndex="2">
+               <xAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </yAxis>
+            </LineChart>
+            <LineChart fx:id="lead_avf" animated="false" createSymbols="false" legendVisible="false" title="Lead AVR" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <xAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+               </yAxis>
+            </LineChart>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <ComboBox fx:id="serial_name" layoutX="64.0" layoutY="13.0" prefHeight="34.0" prefWidth="289.0" promptText="Select Serial Port" />
+                  <TextField fx:id="baud" layoutX="371.0" layoutY="13.0" prefHeight="34.0" prefWidth="159.0" promptText="Baud Rate">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="save_button" disable="true" layoutX="361.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: mediumaquamarine;" text="Save ECG Data" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stop_button" disable="true" layoutX="240.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: crimson;" text="Stop ECG" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="start_button" disable="true" layoutX="118.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: limegreen;" text="Start ECG" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </content>
+</TitledPane>
