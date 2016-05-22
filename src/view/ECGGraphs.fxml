@@ -11,7 +11,7 @@
 
 <TitledPane alignment="CENTER" collapsible="false" text="ECG on the Go" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ECGDisplay">
    <content>
-      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="1192.0" prefHeight="700.0" prefWidth="1198.0">
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="1198.0">
          <children>
             <LineChart fx:id="lead_avr" animated="false" createSymbols="false" legendVisible="false" title="Lead AVF" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <xAxis>

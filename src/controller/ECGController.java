@@ -31,6 +31,7 @@ public class ECGController extends Application implements Controller {
     @Override
     public void start(Stage stage) throws Exception {
         this.stage = stage;
+        stage.setMaximized(true);
         serial = new ECGSerialData(this);
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass()
