@@ -36,7 +36,7 @@ public class ECGController extends Application implements Controller {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass()
                 .getResource(ECGDisplay.GRAPH_DISPLAY));
-        
+
         // load the view and grab the controller
         Parent root = fxmlLoader.load();
         view = (ECGDisplay) fxmlLoader.getController();

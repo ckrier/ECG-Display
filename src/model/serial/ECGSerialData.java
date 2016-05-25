@@ -64,7 +64,9 @@ public class ECGSerialData implements SerialPortListener {
     
     @Override
     public void startListening(String port, int baud) {
-        setupPort(port, baud);
+        if (serialHandle <= 0) {
+            setupPort(port, baud);
+        }
         
         try {
             read = new Thread() {
@@ -130,9 +132,11 @@ public class ECGSerialData implements SerialPortListener {
     private void setupPort(String portName, int baudRate) { 
         serialHandle = port.openPort(portName, false);
         boolean success = port.setParams(serialHandle, baudRate, SerialPort.DATABITS_8, 
-                SerialPort.STOPBITS_1, SerialPort.PARITY_NONE, false, false, 0);
+                SerialPort.STOPBITS_2, SerialPort.PARITY_NONE, false, false, 0);
+
+        System.out.println(success);
         
-        if (serialHandle < 0 || !success) {
+        if (serialHandle == -1 || !success) {
             System.err.println("Error: Could not open serial port " + portName);
             System.exit(0);
         }
