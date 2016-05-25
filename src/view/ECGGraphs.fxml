@@ -18,7 +18,7 @@
                   <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
                </xAxis>
                <yAxis>
-                  <NumberAxis animated="false" autoRanging="false" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+                  <NumberAxis animated="false" autoRanging="false" tickLabelsVisible="false" tickUnit="0.0" upperBound="1.0E8" />
                </yAxis>
             </LineChart>
             <LineChart fx:id="lead1" animated="false" createSymbols="false" legendVisible="false" title="Lead 1">
@@ -26,7 +26,7 @@
                   <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
                </xAxis>
                <yAxis>
-                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="1.0E8" />
                </yAxis>
             </LineChart>
             <LineChart fx:id="lead_avl" animated="false" createSymbols="false" legendVisible="false" title="Lead AVL" GridPane.columnIndex="1">
@@ -34,7 +34,7 @@
                   <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
                </xAxis>
                <yAxis>
-                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="1.0E8" />
                </yAxis>
             </LineChart>
             <LineChart fx:id="lead2" animated="false" createSymbols="false" legendVisible="false" title="Lead 2" GridPane.rowIndex="1">
@@ -42,7 +42,7 @@
                   <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
                </xAxis>
                <yAxis>
-                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="1.0E8" />
                </yAxis>
             </LineChart>
             <LineChart fx:id="lead3" animated="false" createSymbols="false" legendVisible="false" title="Lead 3" GridPane.rowIndex="2">
@@ -50,7 +50,7 @@
                   <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
                </xAxis>
                <yAxis>
-                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="1.0E8" />
                </yAxis>
             </LineChart>
             <LineChart fx:id="lead_avf" animated="false" createSymbols="false" legendVisible="false" title="Lead AVR" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -58,7 +58,7 @@
                   <NumberAxis animated="false" autoRanging="false" side="BOTTOM" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
                </xAxis>
                <yAxis>
-                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="2000.0" />
+                  <NumberAxis animated="false" autoRanging="false" side="LEFT" tickLabelsVisible="false" tickUnit="0.0" upperBound="1.0E8" />
                </yAxis>
             </LineChart>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
